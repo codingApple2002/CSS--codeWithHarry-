@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: yellow;
+            height: 100vh
+        }
+
+        /* transition-property */
+        img{
+            /* initial width */
+            width: 455px;
+
+            /* now transition properties */
+            /* transition-property: width;
+            transition-duration: .1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+
+            /* instead of all above...,use shorthand */
+            transition: width .1s ease-in 1s;
+
+            /* transitioning multiple properties...use (,) for seperation */
+            /* transition: width .1s ease-in 1s, height .1s ease-in 1s; */
+        }
+        /* final width after transition.., */
+        img:hover{
+            width: 56px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="dragon.jpeg" alt=""></div>
+    </div>
+</body>
+</html>

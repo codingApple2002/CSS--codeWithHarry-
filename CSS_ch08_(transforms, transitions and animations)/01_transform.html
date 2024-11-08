@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 50vh;
+        }
+
+        /* transform property and transform-origin(defines from whr the tranform gonna happen), applied on box */
+        .box{
+            border: 2px solid black;
+
+            /* 01 */
+            transform: translate(34px, 50px);
+
+            /* 02...give values like (0.5turn) or you can give in (deg) as well*/
+            /* give values such as rotatex/y/z*/
+            transform: rotate(360deg);
+
+            /* 03...scalex/y/z or scale(x,y)*/
+            transform: scalex(2);
+
+            /* 04...skew(xdeg, ydeg) */
+            /* transform: skew(); */
+
+            /* 05...matrix(), its a shorthand */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci praesentium voluptatem excepturi ut veritatis 
+        </div>
+    </div>
+</body>
+</html>

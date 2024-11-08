@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* background color property */
+.one{
+    background-color: purple;
+    color:white
+}
+
+/* background image property(by default it is repeated in x,y directions) */
+body{
+    background-image: url(kiterasu.jpg);
+}
+
+/* background-repeat property(repeat-x/y/no-repeat...more possible values on mdn docs) */
+body{
+    background-repeat: no-repeat;
+}
+
+
+/* background-size property */
+/* background-size: cover ---> covers the entire element, no empty space remains */
+/* background-size: contain ---> image is fully visible, chances of empty space */
+/* background-size: auto ---> display in orignal size */
+/* background-size:  (width)px height will be set automatically*/
+/* background-size:  (width)px (height)px ruins aspect ratio */
+
+
+/* background positon property...for more refer mdn docs*/
+body{
+    background-position: center top;
+}
+
+/* background attachment property: fixed / scroll / local */
+body{
+    background-attachment: fixed;
+}
+
+/* background shorthand (a single property to set multiple bg- property)*/
+body{
+    background: red url(kiterasu.jpg) no-repeat scroll top right;
+}
+
+
+
+

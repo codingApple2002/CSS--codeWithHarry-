@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1444px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            width:100vw;
+            height: 12vh;
+            position: sticky;
+            top: 0;
+        }
+        header nav ul li{
+            display: inline;
+            font-size: 5vw;
+        }
+        body .one ul{
+            list-style: square inside;
+            margin: 50px;
+            background-color: aqua;
+            width: 10vw;
+        }
+        .two{
+            width: 30vw;
+            height: 30vh;
+            background-color: yellow;
+            margin: auto;
+        }
+        .three{
+            width:30%;
+            height:30%;
+            background-color: purple;
+            color: aliceblue;
+            position: relative;
+            z-index: 0; /*try changing this z index to see the effects */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+   <div class="one">
+    <ul>
+        <li>Tanjiro</li>
+        <li>inosuke</li>
+        <li>zinitsu</li>
+    </ul>
+   </div>
+   <div class="two">
+    i am div with class two.
+    <div class="three">i am inside two</div>
+   </div>
+</body>
+</html>

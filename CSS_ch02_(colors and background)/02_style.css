@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color property */
+.red{
+    background-color: red;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: aqua;
+}
+/* types of color values, */
+/* 1: RGB (red,green,blue) */
+/* 2: HEX code eg: #ff7180 */
+/* 3: HSL(hue, saturation & lightness) eg: hsl(8,90%,63%) */
+
+/* another 2 are.., */
+/* RGBA(red,green,blue,alpha) A for opacity */
+/* HSLA */
+

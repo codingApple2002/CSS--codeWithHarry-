@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            height: 150vh;
+
+
+            /* initializing flex box */
+            display: flex;
+
+            /* properties below are on container..., */
+
+            /* 01 flex-direction */
+            flex-direction: column;
+            flex-direction: row-reverse;
+
+            /* 02 flex wrap */
+            flex-wrap: wrap;
+
+            /* 03 justify content...define alignment along main axis (horizontally) */
+            justify-content: center;
+
+            /* 04 align-items...define alignment along cross axis (vertically)*/
+            align-items: center;
+
+            /* 05 align-content...aligns a flex container's lines when there is extra space in the cross axis. */
+            align-content: center;
+
+        }
+
+        /* properties below are for flex items (children) */
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+
+            /* 01 order......(order1,2,3,4.....) */
+            order: 1;
+
+            /* 02 align-self...(similar to align-item) */
+            align-self: flex-start;
+
+            /* 03 flex-grow...defines the ability to flex item to grow */
+            flex-grow: 3;
+
+            /* 04 flex-shrink...opposite of flex-grow...specifies how much a flex item will shrink relative to the rest of the flex items. */
+        }
+
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+        .box4{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

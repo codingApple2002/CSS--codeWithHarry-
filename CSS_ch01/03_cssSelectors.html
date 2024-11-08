@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* css selector used to select html element for styling */
+        /* element selector */
+        h1{
+            color: red;
+        }
+        div{
+            background-color: antiquewhite;
+        }
+        /* Id selector use # */
+        #one, h3{
+            background-color: red;
+        }
+        /* class selector use .  */
+        .two{
+            background-color: blue;
+            color: white;
+            border: 2px solid black
+        }
+        /* use of element.class and element#id selector */
+        p.cat, p#lion{
+            background-color: black;
+            color: cyan;
+        }
+        /* (*) universal selector */
+        *{
+            margin: 0;
+            padding: 0
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>this is my css selector page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ipsa nulla, totam incidunt a iusto dolor voluptate alias saepe deleniti earum laudantium architecto provident similique, sed nisi velit quisquam, rem qui iure atque blanditiis. Explicabo earum minus placeat nisi adipisci omnis sunt ea maxime sapiente quaerat deleniti repudiandae nam iure vitae maiores aliquam cum exercitationem distinctio, doloribus harum reprehenderit culpa. Recusandae dolore commodi culpa molestias similique aut, omnis explicabo? Sunt, quibusdam eius culpa qui hic obcaecati odio dignissimos illo laboriosam saepe, inventore excepturi eaque deserunt ex assumenda illum ipsam velit. Est, labore. Praesentium totam numquam natus iste voluptatum molestias repellat.</p>
+        <h1>I am another h1 and css code gonna run on me as well.</h1>
+        <div id="one">
+            i am div and my id is one.
+        </div>
+        <span class="two">1st tag</span>
+        <span class="two">2nd tag</span>
+        <span class="two">3rd tag</span>
+        <h3>i am h3 and i am going to use every style of id='one' or #one </h3>
+        <p class="cat">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ut.
+        </p>
+        <p id="lion">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, accusamus.
+        </p>
+    </div>
+</body>
+</html>
+<!-- 
+    imp notes,
+    1: we can group selectors(example given above for id = 'one').
+    2: we can use element.class and element#id selector as well(eg. given above).
+    3: * is a universal selector to select all the elements.
+    4: inline style take priorty...run experiments to learn more.
+    5: css comment use [clrt + /] in vs code or /* */  .
+    
+
+ -->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1444px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        li{
+            display: inline; 
+        }
+        .container{
+            background-color: aqua;
+            margin: auto;
+            height: 50vh;
+            width: 50vw;
+
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        /* all the expirements were ran on below box...,*/
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            position: relative; /*try changing top/bottom/left/right's values */
+            position: absolute; /*box got removed from doc flow & now it gonna set it's position relative to html */
+            position: fixed; /*position relative to browser window...scroll not gonna effect this element it is fixed now. */
+            /* further try position: sticky; and change z index */
+        }
+        
+        .box2{
+            background-color: blue;
+            color: white;
+            height: 200px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, illo.</p>
+        <div class="box">i am a box</div>
+        <div class="box2">me box 2</div>
+    </div>
+</body>
+</html>

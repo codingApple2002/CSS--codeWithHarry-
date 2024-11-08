@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+
+        /* CSS display property */
+        /* display: inline; takes only the space required by an element.No linebreaks before and after.Setting height/width/(top-bottom;margin/padding) not allowed. */
+        .box1, .box2{
+            display: inline;
+        }
+        /* display: block; takes full space available in width and leaves a newline before and after the element. */
+        /* .box1, .box2{
+            display: block;
+        } */
+
+        /* display: inline-block; similar to inline but setting height,width,margin and padding is allowed.Elements can sit next to each other. */
+        .box1{
+            display: inline-block;
+            width:300px;
+        }
+        .box2{
+            display: inline-block;
+            width:300px;
+        }
+
+        /* display:none; removes the element from the doc and visibility: hidden; element is thr just not visible. */
+        /* .box1{
+            display:none;
+        } */
+        /* .box1{
+            visibility: hidden;
+        } */
+
+        /* text-align property, sets the horizontal alignment of a text(content). */
+        .box2{
+            text-align: right;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit.</div>
+    <div class="box2">Lorem, ipsum dolor.</div>
+</body>
+</html>
